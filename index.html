@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Money Counter</title>
+</head>
+<body>
+  <h1>Money Counter</h1>
+
+  <form id="form" class="form">
+    <!-- coins -->
+    <div class="divide">
+      <p class="text">Coins</p>
+      <div class="container">
+        <label for="pennies">1&cent;</label>
+        <input type="number" id="pennies" class="input">
+      </div>
+  
+      <div class="container">
+        <label for="nickels">5&cent;</label>
+      <input type="number" id="nickels" class="input">
+      </div>
+  
+      <div class="container">
+        <label for="dimes">10&cent;</label>
+      <input type="number" id="dimes" class="input">
+      </div>
+  
+      <div class="container">
+        <label for="quarters">25&cent;</label>
+      <input type="number" id="quarters" class="input">
+      </div>
+  
+      <div class="container">
+        <label for="half-dollars">50&cent;</label>
+      <input type="number" id="half-dollars" class="input">
+      </div>  
+    </div>
+    
+    
+    <!-- bills -->
+    <div class="divide">
+      <p class="text">Bills</p>
+      <div class="container">
+        <label for="ones">$1</label>
+        <input type="number" id="ones" class="input">
+      </div>
+  
+      <div class="container">
+        <label for="fives">$5</label>
+      <input type="number" id="fives" class="input">
+      </div>
+  
+      <div class="container">
+        <label for="tens">$10</label>
+      <input type="number" id="tens" class="input">
+      </div>
+  
+      <div class="container">
+        <label for="twenties">$20</label>
+      <input type="number" id="twenties" class="input">
+      </div>
+  
+      <div class="container">
+        <label for="fifties">$50</label>
+      <input type="number" id="fifties" class="input">
+      </div>
+  
+      <div class="container">
+        <label for="hundreds">$100</label>
+      <input type="number" id="hundreds" class="input">
+      </div>
+    </div>
+  </form>
+  
+  <button id="calc-button" class="btn" type="submit">Calculate</button>
+  <button id="reset-button" class="btn" type="reset">Reset</button>
+
+  <div class="results-container">
+    <h2 class="total">Total: $<span class="result">0.00</span></h2>
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
